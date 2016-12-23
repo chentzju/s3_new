@@ -1,0 +1,149 @@
+@charset "utf-8";
+@import "control_less/base.less";//css重写
+@import "control_less/public.less";//公共class
+@import "control_less/head.less";// 头部模板
+@import "control_less/toTop.less";// 
+@import "control_less/shop_nav.less";// 购物车导航
+
+//单选框
+.check{.border(1px,solid,@fontcol_listBlue,0);
+	em{background:url(../images/fillOrder_check.png) no-repeat;background-size: 100% 100%;}
+}
+
+.nocheck{.border(1px,solid,#E5E5E5,0);
+	em{background:url(../images/fillOrder_nocheck.png) no-repeat;background-size: 100% 100%;}	
+}
+.kuang{float:left;
+	width:100px;height:35px;
+	.line_height(35px);
+	text-align: center;
+	cursor:pointer;
+	margin-right: 25px;
+	em{width:17px;height:17px;
+		display:inline-block;
+		position:relative;
+		left:-5px;top:3px;
+	}
+}
+//地址单选框
+.addr_check{position:relative;
+	.border(1px,solid,@fontcol_listBlue,0);
+	em{display:inline-block;
+		width:27px;height:27px;
+		background:url(../images/sb.png) no-repeat;
+		position:absolute;
+		right:0;bottom:0;
+
+	}
+
+}
+.addr_nocheck{
+	.border(1px,solid,#E5E5E5,0);
+}
+
+.om{overflow: hidden;margin-bottom: 40px;}
+
+.main{width:83%;
+	.margin_auto;
+	.bg_col(#FBFBFB);
+	.border(1px,solid,#E5E5E5,0);
+	padding-top:1%;
+	padding-left:2%;
+	font-size: 14px;
+
+
+	p{font-size:14px;font-weight: bold;margin-bottom: 20px;clear:both;}
+	.borr{width:97.5%;}
+	.dizhi{
+		div{float:left;
+			width:270px;height:130px;
+			padding-left:10px;
+			margin-right: 10px;
+			background-color:#fff;
+			cursor:pointer;
+		}
+		span{display:block;margin-bottom: 10px;}
+		.handle{display:block;
+			height:27px;
+			color:#FF6522;
+			overflow:hidden;
+			span{float:right;margin:5px;}
+		}
+		.add_addres{display:block;
+			width:100px;height:30px;
+			border:1px solid #CFCFCF;
+			clear:both;
+			.line_height(30px);
+			text-align: center;
+			margin-top:170px;
+			cursor:pointer;
+		}
+	}
+	.zhifu{
+		input{display:inline-block;
+			width:230px;height:30px;
+			padding-left:10px;
+		}
+	}
+	.beizhu{
+		textarea{width:780px;height:80px;padding:10px;}
+	}
+	.bor{clear:both;
+		.border(1px,solid,#E5E5E5,0);
+		width:97.5%;
+		background-color: #fff;
+	}
+	.dingdan_list{width:98%;overflow:hidden;
+		li{float:left;
+			height:60px;line-height: 60px;
+			text-align: center;
+		}	
+		.num{width:3%;}
+		.numTxt{width:10%;}
+		.name{width:12%;}
+		.standard{width:11%;}
+		.color{width:5%;}
+		.unit{width:5%;}
+		.bPrice{width:12%;}
+		.sPrice{width:12%;}
+		.count{width:7%;}
+		.date{width:10%;}
+		.subtotal{width:13%;}
+	}
+	.dingdan_bottom{width:97.5%;
+		margin-top: 20px;
+		margin-bottom: 50px;
+		.total{float:left;font-weight: bold;}
+		.total_num{float:right;color:#FF4500;}
+	}
+}
+.shopCar{overflow:hidden;
+	width:83%;
+	.margin_auto;
+	margin: 30px auto 60px auto;
+	margin-bottom: 60px;
+	div{height:40px;
+		line-height: 40px;
+		text-align: center;
+	}
+	.backshopCar{float:left;
+		width:130px;
+		border:1px solid #DEDEDE;
+	}
+	.toBuy{float:right;
+		width:140px;
+		border-radius: 20px;
+		color:@fontcol_white;
+		background-color: @bg_btnBlue;
+		position:relative;
+		em{display:inline-block;
+			width:20px;height:20px;
+			.bg_url(url(../images/icon_right.png));
+			position:absolute;
+			right:23px;top:10px;
+
+		}
+	}
+}
+
+

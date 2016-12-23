@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet/less" type="text/css" href="less/fillOrder.less">
+	<script src="js/less.js" type="text/javascript"></script>
+	<title>Document</title>
+</head>
+<body>
+<!-- 头部模板 start-->
+<!-- 顶部 ↓-->
+	<div class="head">
+		<div class="head_top">
+			<p class="head_top_left">
+				<span class="blue">测试1，</span>当前角色：<span class="blue">经销商!</span>
+				<span id="cut">经销商<em></em></span>
+			</p>
+			<p class="head_top_right">
+				<span>经销商名称：</span>
+				<span class="blue">工银聚股份有限公司</span>
+				<span class="top_btn">
+					<span id="shop"><em></em>购物车</span>
+					<span id="collect"><em></em>收藏夹</span>
+				</span>
+				<span id="quit">退出</span>
+			</p>
+		</div>
+	</div>
+<!-- 顶部 ↑-->
+
+<!-- logo ↓-->
+	<div class="logo">
+		<div class="head_logo">
+			<div class="head_logo_left">
+				<p><span></span>浙江工银聚有限公司</p>
+			</div>
+		</div>
+	</div>
+<!-- logo ↑-->
+
+<!-- 导航 ↓-->
+	<div class="nav">
+		<ul class="nav_list">
+			<li>首页</li>
+			<li>快速下单</li>
+			<li>我的订单</li>
+			<li>我的单据</li>
+			<li>金融助手</li>
+			<li>账户信息</li>
+		</ul>
+	</div>
+<!-- 导航 ↑-->
+
+<!-- 面包屑 ↓-->
+	<div class="crumbs">
+		<div class="crumbs_list">
+			<span>当前位置：快速下单</span><em>></em>
+			<span>购物车</span><em>></em>
+			<span class="blue">填写订单</span>
+		</div>
+	</div>
+<!-- 面包屑 ↑-->
+<!-- 头部模板 end-->
+
+<div class="shop_nav">
+	<div class="main_title">
+		<p class="myShop" style="width:150px;">填写核对订单信息<em></em></p>
+		<div class="bill">
+			<div class="bill_list bill_check">
+				<em>1</em><span>我的购物车</span>
+			</div>
+			<div class="bill_list bill_nocheck">
+				<em>2</em><span>填写核对账单信息</span>
+			</div>
+			<div class="bill_list bill_nocheck">
+				<em>3</em><span>成功提交订单</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="main">
+	<div class="jiaohuo om">
+		<p>1.交货方式</p>
+		<div class="kuang check">
+			<em></em><span>自提</span>
+		</div>
+		<div class="kuang nocheck">
+			<em></em><span>配送</span>
+		</div>
+	</div>
+	
+	<div class="dizhi om">
+		<p>2.地址选择</p>
+		<div class="address addr_check">
+			<em></em>
+			<span class="handle">
+				<span>删除</span><span>修改</span>
+			</span>
+			<span>梁庆芬</span>
+			<span>广东省－广州市－天河区 华夏路 富力盈
+				通大厦17楼
+			</span>
+			<span>186****8617</span>
+		</div>
+		<div class="address addr_nocheck">
+			<em></em>
+			<span class="handle">
+				<span></span><span></span>
+			</span>
+			<span>梁庆芬</span>
+			<span>广东省－广州市－天河区 华夏路 富力盈
+				通大厦17楼
+			</span>
+			<span>186****8617</span>
+		</div>
+		<span class="add_addres">+使用新地址</span>
+	</div>
+	<div class="chuku om">
+		<p>3.出库方式</p>
+		<div class="kuang check">
+			<em></em><span>自理</span>
+		</div>
+		<div class="kuang nocheck">
+			<em></em><span>代付</span>
+		</div>
+	</div>
+	<div class="cheliang om">
+		<p>4.车辆类型</p>
+		<div class="kuang check">
+			<em></em><span>普通车</span>
+		</div>
+		<div class="kuang nocheck">
+			<em></em><span>集装箱</span>
+		</div>
+	</div>
+	<div class="zhifu om">
+		<p>5.付款方式</p>
+		<div class="kuang check">
+			<em></em><span>电汇</span>
+		</div>
+		<div class="kuang nocheck">
+			<em></em><span>承兑</span>
+		</div>
+		<div class="kuang nocheck">
+			<em></em><span>现金支票</span>
+		</div>
+		<div class="kuang nocheck">
+			<em></em><span>其他</span>
+		</div>
+		<input type="text" placeholder="20字以内"/>
+	</div>
+	<div class="hetong om">
+		<p>6.是否需要文本合同</p>
+		<div class="kuang check">
+			<em></em><span>否</span>
+		</div>
+		<div class="kuang nocheck">
+			<em></em><span>是</span>
+		</div>
+	</div>
+	<div class="yaohuo om">
+		<p>7.要货日期</p>
+		<div class="kuang">
+			<em></em><span></span>
+		</div>
+	</div>
+	<div class="beizhu om">
+		<p>8.订单备注</p>
+		<textarea style="resize:none;" placeholder="请填写备注"></textarea>
+	</div>
+	<div class="dingdan om">
+		<p>9.确认订单信息</p>
+		<div class="borr">
+			<ul class="dingdan_list">
+				<li class="num"></li>
+				<li class="numTxt">产品编号</li>
+				<li class="name">产品名称</li>
+				<li class="standard">产品规格</li>
+				<li class="color">颜色</li>
+				<li class="unit">单位</li>
+				<li class="bPrice">标准价</li>
+				<li class="sPrice">实际价</li>
+				<li class="count">数量</li>
+				<li class="date">要货日期</li>
+				<li class="subtotal">小计</li>
+			</ul>
+		</div>
+			
+		<div class="bor">
+			<ul class="dingdan_list">
+				<li class="num">1.</li>
+				<li class="numTxt">10010003</li>
+				<li class="name">POY大打副业</li>
+				<li class="standard">262dtex/48f</li>
+				<li class="color">黑色</li>
+				<li class="unit">米</li>
+				<li class="bPrice">￥600,000.00</li>
+				<li class="sPrice">￥222,546.00</li>
+				<li class="count">666666</li>
+				<li class="date">2016-07-28</li>
+				<li class="subtotal">￥222,546.00</li>
+			</ul>
+			<ul class="dingdan_list">
+				<li class="num">1.</li>
+				<li class="numTxt">10010003</li>
+				<li class="name">POY大打副业</li>
+				<li class="standard">262dtex/48f</li>
+				<li class="color">黑色</li>
+				<li class="unit">米</li>
+				<li class="bPrice">￥600,000.00</li>
+				<li class="sPrice">￥222,546.00</li>
+				<li class="count">666666</li>
+				<li class="date">2016-07-28</li>
+				<li class="subtotal">￥222,546.00</li>
+			</ul>
+			<ul class="dingdan_list">
+				<li class="num">1.</li>
+				<li class="numTxt">10010003</li>
+				<li class="name">POY大打副业</li>
+				<li class="standard">262dtex/48f</li>
+				<li class="color">黑色</li>
+				<li class="unit">米</li>
+				<li class="bPrice">￥600,000.00</li>
+				<li class="sPrice">￥222,546.00</li>
+				<li class="count">666666</li>
+				<li class="date">2016-07-28</li>
+				<li class="subtotal">￥222,546.00</li>
+			</ul>
+		</div>
+		<div class="dingdan_bottom">
+			<span class="total">合计</span>
+			<span class="total_num">￥222,546.00</span>
+		</div>
+	</div>
+</div>
+<div class="shopCar">
+	<div class="backshopCar">返回购物车修改</div>
+	<div class="toBuy">去结算<em></em></div>
+</div>
+
+
+<!-- toTop ↓↑-->
+<div class="fixed_btn">
+	<div class="cut">
+		<span class="cut_pic"></span>
+		<span>切换</span>
+		<span>经销商</span>
+	</div>
+	<div class="toTop">
+		<a href="#">
+			<span class="toTop_pic"></span>
+			<span>返回</span>
+			<span>顶部</span>
+		</a>
+	</div>
+</div>
+<!-- toTop ↑-->
+
+<div class="foot">
+	<div class="foot_main">
+		© 2015 浙江工银聚有限公司 版权所有 公司地址：中国 浙江省杭州市新市街153号　电话：0571-88888888
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+//图标列表模板
+//图标
+.list_pic01{background:url() no-repeat;}
+.list_pic02{background:url() no-repeat;}
+.list_pic03{background:url() no-repeat;}
+//标题字体颜色
+@col_title:;
+//内容字体颜色
+@col_txt:;
+//每项宽度（默认3个）
+@width_ul:;
+//横线长度
+@width_line:;
+
+.list_icon{width:100%;
+	height:430px;
+	.list_content{width:1200px;
+		margin:0 auto;
+		overflow:hidden;
+		ul{width:@width_ul;
+			float:left;
+			margin-top:120px;
+			li{text-align: center;
+				.margin_auto;
+				width:100%;
+			}
+			.list_pic{width:40px;
+				height:40px;
+				background-size:100% 100%;
+			}
+			.list_line{
+				width:@width_line;
+				height:0px;
+				margin-top:10px;
+				border-top: 2px solid #226995;
+			}
+			.list_title{color:@col_title;
+				margin-bottom: 30px;
+				padding-top: 15px;
+				font-weight: bold;
+			}
+			.list_txt{color:@col_txt;
+				font-size:14px;
+				line-height: 30px;
+			}
+		}
+	}
+}

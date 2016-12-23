@@ -1,0 +1,10 @@
+@charset "utf-8";
+.margin_auto {
+  margin: 0 auto;
+}
+.font_w {
+  font-weight: bold;
+}
+.pointer {
+  cursor: pointer;
+}

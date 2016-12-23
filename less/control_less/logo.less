@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+// 工银聚logo位置
+.logo{left:@logo_l;top:@logo_t;}
+//长条说明位置
+.tag{right:@tag_r;top:@tag_t;}
+
+// 图标logo
+.logo{
+	width:240px;
+	height:30px;
+	position:relative;
+	.logo_pic{width:66px;
+		height:30px;
+		line-height: 30px;
+		display:inline-block;
+		background:url("../images/logo.png") no-repeat;
+		position:absolute;
+		top:3px;
+		left:0;
+	}
+	.logo_txt{
+		height:30px;
+		line-height: 30px;
+		font-size: 18px;
+		font-weight: 900;
+		position:absolute;
+		top:0;
+		left:72px;
+	}
+}
+// 浙江电子供应链在线商城
+.tag{width:45px;height:200px;background-color:@tag_bc;position:absolute;
+	.tag_txt{position:absolute;
+		left:13px;top:10px;color:#fff;font-size: 18px;
+	}
+}

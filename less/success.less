@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import "control_less/base.less";//css重写
+@import "control_less/public.less";//公共class
+@import "control_less/head.less";// 头部模板
+@import "control_less/toTop.less";// 
+@import "control_less/shop_nav.less";// 购物车导航
+
+.main{width:83%;
+	.margin_auto;
+	margin-bottom:70px;
+	.bg_col(#FBFBFB);
+	.border(1px,solid,#E5E5E5,0);
+	padding-top:1%;
+	padding-left:2%;
+	margin-top:10px;
+	font-size: 14px;
+	
+	.success{width:80%;
+		margin:100px auto 120px auto;
+		.title{width:390px;height:70px;
+			.margin_auto;
+			padding-left:50px;
+			position:relative;
+			p{font-size: 18px;font-weight: bold;heigth:40px;}
+			span{font-size:14px;display:inline-block;height:20px;margin-top: 18px;}
+			em{display:inline-block;
+				height:40px;width:40px;
+				background:url(../images/OK.png) no-repeat 47% 55%;
+				background-size:70% 70%;
+				border-radius: 50%;
+				.bg_col(#7ABC55);
+				position:absolute;
+				left:-3px;top:0;
+			}
+		}
+		.dashed{width:100%;border-top:1px dashed #B5B5B5;margin-top:100px;margin-bottom: 25px;}
+		ul{color:#737373;
+			li{width:100%;height:25px;line-height: 25px;}
+		}
+		.btn{width:370px;.margin_auto;margin-top: 90px;
+			span{display:inline-block;width:130px;height:30px;line-height:30px;text-align:center;font-size:16px;}
+			.btn_shop{.bg_col(#6CB1DE);color:#fff;margin-right: 80px;}
+			.btn_order{.bg_col(#F4F9FC);color:#0B2F5C;.border(1px,solid,#DBDBDB,0);}
+		}
+	}
+}
+
+

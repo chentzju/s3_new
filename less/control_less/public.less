@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@bg_Blue:#005787;
+@bg_lightBlue:#F0F8FA;
+@bg_deepBlue:#0B2F5C;
+
+@bg_btnBlue:#6CB1DE;
+
+@bg_gray:#F7F7F7;
+
+@fontcol_blue:#005787;
+@fontcol_lightBlue:#226994;
+@fontcol_listBlue:#0085D0;
+
+@fontcol_lightBlack:#5A5A5A;
+@fontcol_black:#000;
+
+@fontcol_gray:#D5D5D5;
+
+@fontcol_white:#fff;
+
+@font_S01:14px;
+
+//元素水平居中
+.margin_auto{margin:0 auto;}
+
+//背景图片
+.bg_url(@url){
+	background:@url no-repeat;
+	background-size: 100% 100%;
+}
+//背景颜色
+.bg_col(@cor){background-color:@cor;}
+
+//字体加粗
+.font_w{font-weight: bold;}
+//文字居中对齐
+.line_height(@px){line-height:@px;}
+
+//边框圆角
+.border(@px,@sd,@col,@ra){
+	border:@px @sd @col;
+	border-radius: @ra;
+}
+//悬浮小手
+.pointer{cursor: pointer;}

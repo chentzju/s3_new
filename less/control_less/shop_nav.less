@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* 购物车导航 ↓*/
+//小计
+.cor_sub{color:#FF4500;}
+//我的-填写-成功
+
+.bill_check{border-top:4px solid @fontcol_listBlue;
+	em{.bg_col(@fontcol_listBlue);}
+}
+.bill_checked{border-top:4px solid #7ECDF4;
+	em{.bg_col(#7ECDF4);}
+}
+.bill_nocheck{border-top:4px solid #DEDEDE;
+	em{.bg_col(#DEDEDE);}
+}
+
+.shop_nav{width:85%;
+	.margin_auto;
+	margin-top: 40px;
+
+	.main_title{height:50px;
+	}
+	.myShop{width:100px;
+		float:left;
+		font-size: 16px;
+		color:@fontcol_blue;
+		font-weight: bold;
+		position:relative;
+		em{display:inline-block;
+			border-width:6px;
+			border-style: solid;
+			border-color: @fontcol_blue transparent transparent transparent;
+			position:absolute;
+			right:4px;
+			top:20%;
+		}
+	}
+	.bill{width:560px;height:100%;
+		float:right;
+		.bill_list{float:left;
+			width:33%;
+			
+			border-radius:5px;
+			position:relative;
+			em{display:inline-block;
+				width:25px;height:25px;
+				border-radius: 50%;
+				.line_height(25px);
+				text-align: center;
+				color:@fontcol_white;
+				position:absolute;
+				top:-14px;
+				left:45%;
+			}
+			span{display:inline-block;
+				width:100%;
+				font-size: @font_S01;
+				text-align: center;
+				color:@fontcol_listBlue;
+				position:absolute;
+				top:15px;left:2%;
+			}
+		}
+	}
+}
+/* 购物车导航 ↑*/
