@@ -1,0 +1,136 @@
+@charset "utf-8";
+@import "control_less/base.less";//css重写
+@import "control_less/public.less";//公共class
+@import "control_less/logo.less";//logo+长条说明
+@import "control_less/icon_list.less";//图标列表
+@import "control_less/foot_list.less";//页面底部（列表）
+
+//工银聚logo位置
+@logo_l:140px;
+@logo_t:60px;
+//长条说明样式
+@tag_t:0px;
+@tag_r:140px;
+@tag_bc:#156190;
+
+//图标列表
+//图标路径
+.list_pic01{background:url(../images/login01_01.png) no-repeat;}
+.list_pic02{background:url(../images/login01_02.png) no-repeat;}
+.list_pic03{background:url(../images/login01_03.png) no-repeat;}
+
+//每项宽度（默认3个）
+@width_ul:33.3%;
+//横线长度
+@width_line:105px;
+
+.top{width:100%;
+	height:670px;
+	.bg_url(url("../images/login01_banner.png"));
+		
+	#login{width:360px;
+		font-size: 14px;
+		.margin_auto;
+		margin-top:210px;
+		.name>em{background:url(../images/login01_name.png) no-repeat;}
+		.password>em{background:url(../images/login01_password.png) no-repeat;}
+		.input{position:relative;
+
+			#name{margin-bottom: 30px;}
+
+			em{display:inline-block;
+				width:22px;
+				height:22px;
+				position:absolute;
+				right:5px;
+				top:50%;
+				margin-top:-11px;
+				background-size:100% 100%;
+			}
+				
+			input{display:block;
+				width:350px;
+				height:30px;
+				color:#276C97;
+				font-size: 14px;
+				padding-left: 10px;
+			}
+		}
+		.remember{width:100%;
+			height:20px;
+			line-height: 20px;
+			overflow: hidden;
+			position:relative;
+			margin-top:20px;
+
+			.left{float:left;
+				color:#373737;
+				padding-left: 25px;
+				.pointer;
+				em{display:inline-block;
+					width:17px;
+					height:17px;
+					border: 1.5px solid #156290;
+					border-radius: 5px;
+					position:absolute;
+					left:0;
+					top:1px;
+					background:url(../images/login01_checked.png) no-repeat;
+					background-size:100% 100%;
+				}
+			}
+
+			.right{float:right;
+				font-weight:600;
+				color:#2E7099;
+				.pointer;
+			}
+		}
+		.btn{width:130px;
+			height:40px;
+			color:#fff;
+			background-color:#6CB1DE;
+			text-align: center;
+			line-height: 40px;
+			border-radius: 5px;
+			margin:55px auto 30px auto;
+			.pointer;
+		}
+	}
+	.signin{text-align: center;
+		font-size: 14px;
+		color:#484848;
+		a{
+			color:#2D6E96;
+			margin-left:10px;
+			text-decoration:underline;
+			font-weight: 600;
+		}
+	}
+}
+.middle{height:445px;
+	background-color:@bg_Blue;
+	overflow:hidden;
+	.introduce{width:1000px;
+		.margin_auto;
+		margin-top:100px;
+		position:relative;
+		h1{font-size: 30px;
+			color:#fff;
+			margin-bottom: 30px;
+		}
+		p{width:570px;
+			font-size: 16px;
+			color:#EEF3F7;
+			line-height: 25px;
+		}
+		em{display:inline-block;
+			width:17px;
+			height:17px;
+			.bg_url(url(../images/login1_04.png));
+			position:absolute;
+			right:0;
+			bottom:-40px;
+		}
+	}
+}

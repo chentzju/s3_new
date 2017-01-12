@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import "control_less/base.less";//css重写
+@import "control_less/public.less";//公共class
+@import "control_less/head.less";// 头部模板
+@import "control_less/toTop.less";// 返回顶部
+@import "control_less/account_nav.less";// 返回顶部
+
+.main_left{height:678px;}
+em{display: inline-block;}
+.font_col01{color:#FF6828;}
+.font_col00{color:transparent;}
+
+.main{height:678px;
+	.main_right_content{
+		span{display:inline-block;}
+		width:100%;
+		margin:45px 0 0 40px;
+		font-size:12px;
+	}
+	.add_title{margin-bottom: 30px;}
+	span{height:30px;line-height: 30px;
+		box-sizing: border-box;
+	}
+	input{height:30px;box-sizing: border-box;}
+	.name{font-weight: bold;text-align:right;width:90px;}
+	.inp{margin-top: 10px;
+		input{width:270px;
+			padding-left: 10px;
+		}
+	}
+	
+	.save{width:80px;height:30px;
+		line-height: 30px;
+		text-align:center;
+		.bg_col(#6CB1DE);
+		color:#fff;
+		margin-left: 92px;
+		margin-top:25px;
+		font-size: 14px;
+	}
+	.tip{color:#FF6828;margin:80px 0 10px 0;}
+	.text{line-height: 25px;}
+}

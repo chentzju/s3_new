@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet/less" type="text/css" href="less/myDelivery.less">
+	<script src="js/less.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 头部模板 start-->
+<!-- 顶部 ↓-->
+	<div class="head">
+		<div class="head_top">
+			<p class="head_top_left">
+				<span class="blue">测试1，</span>当前角色：<span class="blue">经销商!</span>
+				<span id="cut">经销商<em></em></span>
+			</p>
+			<p class="head_top_right">
+				<span>经销商名称：</span>
+				<span class="blue">工银聚股份有限公司</span>
+				<span class="top_btn">
+					<span id="shop"><em></em>购物车</span>
+					<span id="collect"><em></em>收藏夹</span>
+				</span>
+				<span id="quit">退出</span>
+			</p>
+		</div>
+	</div>
+<!-- 顶部 ↑-->
+
+<!-- logo ↓-->
+	<div class="logo">
+		<div class="head_logo">
+			<div class="head_logo_left">
+				<p><span></span>浙江工银聚有限公司</p>
+			</div>
+		</div>
+	</div>
+<!-- logo ↑-->
+
+<!-- 导航 ↓-->
+	<div class="nav">
+		<ul class="nav_list">
+			<li>首页</li>
+			<li>快速下单</li>
+			<li>我的订单</li>
+			<li>我的单据</li>
+			<li>金融助手</li>
+			<li>账户信息</li>
+		</ul>
+	</div>
+<!-- 导航 ↑-->
+<!-- 头部模板 end-->
+
+<div class="main">
+	<!-- 列表导航 ↓-->
+	<div class="main_left">
+		<ul class="main_left_list">
+			<li class="zh checked01">
+				<em></em><p>我的付款单</p>
+			</li>
+			<li class="xg">
+				<em></em><p>我的发货单</p>
+			</li>
+			<li class="dz">
+				<em></em><p>我的对账单</p>
+			</li>
+			<li class="zz">
+				<em></em><p>我的发票</p>
+			</li>
+			<li class="dk">
+				<em></em><p>我的发票</p>
+			</li>
+		</ul>
+	</div>
+	<div class="main_right">
+		<!-- <div class="main_right_title">对账单列表<em></em></div> -->
+		<div class="main_right_content">
+			<div class="screen">
+				<div class="laiyuan">
+					<span class="ly">分公司:</span><span class="sy">浙江工银聚有限公司2<em></em></span>
+				</div>
+				<div class="jingxiao">
+					<span class="jx">编号:</span><input placeholder="请输入"type="text">
+				</div>
+				<div class="shijian">
+					<span class="sj">时间:</span><input placeholder="请输入"type="text">
+				</div>
+				<div class="cut"></div>
+
+				<div id="clear" class="btn">清空</div>
+				<div id="search" class="btn">确认</div>
+				<div id="export" class="btn">导出</div>
+			</div>
+
+			<div class="tool">
+				<div class="newUser">发货单列表<em></em></div>
+				<div class="page">
+					<span id="btn_left"><</span>
+					<span id="page_left">1</span>
+					<span>/</span>
+					<span id="page_right">30</span>
+					<span id="btn_right">></span>
+				</div>
+			</div>
+
+			<div class="yue">
+				<div class="addOrder"><em></em>新建发货单</div>
+			</div>
+			
+			<ul class="order_list">
+				<li class="order_li">
+					<div class="list_top">
+						<ul class="top_title">
+							<li class="list01">发货单编号</li>
+							<li class="list02">车牌号</li>
+							<li class="list03">发货时间</li>
+							<li class="list04">手机号码</li>
+							<li class="list05">状态</li>
+							<li class="list06">操作</li>
+						</ul>
+						<ul class="top_text">
+							<li class="list01">C201607111002</li>
+							<li class="list02">浙A GB157</li>
+							<li class="list03">2016-07-11 11:29:34</li>
+							<li class="list04">13515818311</li>
+							<li class="list05 state">未确认</li>
+							<li class="list06">
+								<span class="list06_l"><em></em>查看详情</span>
+								<span class="list06_r"><em></em>运费登记</span>
+							</li>
+						</ul>
+					</div>
+					<div class="list_btn hide"><em></em></div>
+					<div class="list_btn_show">
+						<ul class="list_bottom">
+							<li class="txt01"><span class="b_name">订单号</span><span class="b_text">C201607111002</span></li>
+							<li class="txt02"><span class="b_name">客房编号</span><span class="b_text">浙A GB157</span></li>
+							<li class="txt03"><span class="b_name">下单时间</span><span class="b_text">2016-07-11 11:29:34</span></li>
+							<li class="txt04"><span class="b_name">订单金额</span><span class="b_text font_col01">¥ 444.00</span></li>
+							<li class="txt05"><span class="b_name">订单状态</span><span class="b_text shenhe">已审核<em></em></span></li>
+							<li class="txt01"><span class="b_name">订单号</span><span class="b_text">C201607111002</span></li>
+							<li class="txt02"><span class="b_name">客房编号</span><span class="b_text">浙A GB157</span></li>
+							<li class="txt03"><span class="b_name">下单时间</span><span class="b_text">2016-07-11 11:29:34</span></li>
+							<li class="txt04"><span class="b_name">订单金额</span><span class="b_text font_col01">¥ 444.00</span></li>
+							<li class="txt05"><span class="b_name">订单状态</span><span class="b_text shenhe">已审核<em></em></span></li>
+						</ul>	
+					</div>
+				</li>
+
+				<li class="order_li">
+					<div class="list_top">
+						<ul class="top_title">
+							<li class="list01">发货单编号</li>
+							<li class="list02">车牌号</li>
+							<li class="list03">发货时间</li>
+							<li class="list04">手机号码</li>
+							<li class="list05">状态</li>
+							<li class="list06">操作</li>
+						</ul>
+						<ul class="top_text">
+							<li class="list01">C201607111002</li>
+							<li class="list02">浙A GB157</li>
+							<li class="list03">2016-07-11 11:29:34</li>
+							<li class="list04">13515818311</li>
+							<li class="list05 state">未确认</li>
+							<li class="list06">
+								<span class="list06_l"><em></em>查看详情</span>
+								<span class="list06_r"><em></em>运费登记</span>
+							</li>
+						</ul>
+					</div>
+					<div class="list_btn show"><em></em></div>
+				</li>
+				<li class="order_li">
+					<div class="list_top">
+						<ul class="top_title">
+							<li class="list01">发货单编号</li>
+							<li class="list02">车牌号</li>
+							<li class="list03">发货时间</li>
+							<li class="list04">手机号码</li>
+							<li class="list05">状态</li>
+							<li class="list06">操作</li>
+						</ul>
+						<ul class="top_text">
+							<li class="list01">C201607111002</li>
+							<li class="list02">浙A GB157</li>
+							<li class="list03">2016-07-11 11:29:34</li>
+							<li class="list04">13515818311</li>
+							<li class="list05 state">未确认</li>
+							<li class="list06">
+								<span class="list06_l"><em></em>查看详情</span>
+								<span class="list06_r"><em></em>运费登记</span>
+							</li>
+						</ul>
+					</div>
+					<div class="list_btn show"><em></em></div>
+				</li>
+				<li class="order_li">
+					<div class="list_top">
+						<ul class="top_title">
+							<li class="list01">发货单编号</li>
+							<li class="list02">车牌号</li>
+							<li class="list03">发货时间</li>
+							<li class="list04">手机号码</li>
+							<li class="list05">状态</li>
+							<li class="list06">操作</li>
+						</ul>
+						<ul class="top_text">
+							<li class="list01">C201607111002</li>
+							<li class="list02">浙A GB157</li>
+							<li class="list03">2016-07-11 11:29:34</li>
+							<li class="list04">13515818311</li>
+							<li class="list05 state">未确认</li>
+							<li class="list06">
+								<span class="list06_l"><em></em>查看详情</span>
+								<span class="list06_r"><em></em>运费登记</span>
+							</li>
+						</ul>
+					</div>
+					<div class="list_btn show"><em></em></div>
+				</li>
+								<li class="order_li">
+					<div class="list_top">
+						<ul class="top_title">
+							<li class="list01">发货单编号</li>
+							<li class="list02">车牌号</li>
+							<li class="list03">发货时间</li>
+							<li class="list04">手机号码</li>
+							<li class="list05">状态</li>
+							<li class="list06">操作</li>
+						</ul>
+						<ul class="top_text">
+							<li class="list01">C201607111002</li>
+							<li class="list02">浙A GB157</li>
+							<li class="list03">2016-07-11 11:29:34</li>
+							<li class="list04">13515818311</li>
+							<li class="list05 state">未确认</li>
+							<li class="list06">
+								<span class="list06_l"><em></em>查看详情</span>
+								<span class="list06_r"><em></em>运费登记</span>
+							</li>
+						</ul>
+					</div>
+					<div class="list_btn hide"><em></em></div>
+					<div class="list_btn_show">
+						<ul class="list_bottom">
+							<li class="txt01"><span class="b_name">订单号</span><span class="b_text">C201607111002</span></li>
+							<li class="txt02"><span class="b_name">客房编号</span><span class="b_text">浙A GB157</span></li>
+							<li class="txt03"><span class="b_name">下单时间</span><span class="b_text">2016-07-11 11:29:34</span></li>
+							<li class="txt04"><span class="b_name">订单金额</span><span class="b_text font_col01">¥ 444.00</span></li>
+							<li class="txt05"><span class="b_name">订单状态</span><span class="b_text shenhe">已审核<em></em></span></li>
+							<li class="txt01"><span class="b_name">订单号</span><span class="b_text">C201607111002</span></li>
+							<li class="txt02"><span class="b_name">客房编号</span><span class="b_text">浙A GB157</span></li>
+							<li class="txt03"><span class="b_name">下单时间</span><span class="b_text">2016-07-11 11:29:34</span></li>
+							<li class="txt04"><span class="b_name">订单金额</span><span class="b_text font_col01">¥ 444.00</span></li>
+							<li class="txt05"><span class="b_name">订单状态</span><span class="b_text shenhe">已审核<em></em></span></li>
+						</ul>	
+					</div>
+				</li>
+			</ul>
+
+			<div class="page_line"></div>
+			<!-- 页码 ↓-->
+			<div class="pageNum">
+				<span id="page_prev"><em></em>上一页</span>
+				<ul id="page_num">
+					<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li>
+				</ul>
+				<span id="page_next">下一页<em></em></span>
+			</div>
+			<!-- 页码 ↑-->
+		</div>
+	</div>
+	<!-- 列表导航 ↑-->
+</div>
+
+<!-- toTop ↓↑-->
+<div class="fixed_btn">
+	<div class="cut">
+		<span class="cut_pic"></span>
+		<span>切换</span>
+		<span>经销商</span>
+	</div>
+	<div class="toTop">
+		<a href="#">
+			<span class="toTop_pic"></span>
+			<span>返回</span>
+			<span>顶部</span>
+		</a>
+	</div>
+</div>
+<!-- toTop ↑-->
+
+<div class="foot">
+	<div class="foot_main">
+		© 2015 浙江工银聚有限公司 版权所有 公司地址：中国 浙江省杭州市新市街153号　电话：0571-88888888
+	</div>
+</div>
+</body>
+</html>

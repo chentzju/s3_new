@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet/less" type="text/css" href="less/myOrder.less">
+	<script src="js/less.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 顶部 ↓-->
+	<div class="head">
+		<div class="head_top">
+			<p class="head_top_left">
+				<span class="blue">测试1，</span>当前角色：<span class="blue">经销商!</span>
+				<span id="cut">经销商<em></em></span>
+			</p>
+			<p class="head_top_right">
+				<span>经销商名称：</span>
+				<span class="blue">工银聚股份有限公司</span>
+				<span class="top_btn">
+					<span id="shop"><em></em>购物车</span>
+					<span id="collect"><em></em>收藏夹</span>
+				</span>
+				<span id="quit">退出</span>
+			</p>
+		</div>
+	</div>
+<!-- 顶部 ↑-->
+
+<!-- logo ↓-->
+	<div class="logo">
+		<div class="head_logo">
+			<div class="head_logo_left">
+				<p><span></span>浙江工银聚有限公司</p>
+			</div>
+		</div>
+	</div>
+<!-- logo ↑-->
+
+<!-- 导航 ↓-->
+	<div class="nav">
+		<ul class="nav_list">
+			<li>首页</li><li>快速下单</li><li>我的订单</li><li>我的单据</li><li>金融助手</li><li>账户信息</li>
+		</ul>
+	</div>
+<!-- 导航 ↑-->
+
+<div class="main">
+	<div class="screen">
+		<div class="laiyuan">
+			<span class="ly">来源:</span><span class="sy">所有订单<em></em></span>
+		</div>
+		<div class="dingdan">
+			<span class="dd">订单编号:</span><input placeholder="请输入"type="text">
+		</div>
+		<div class="jingxiao">
+			<span class="jx">经销商名称/编号:</span><input placeholder="请输入"type="text">
+		</div>
+		<div class="shijian">
+			<span class="sj">时间:</span><input placeholder="请点击   -   请点击"type="text">
+		</div>
+		<div class="cut"></div>
+
+		<div class="btn">清除</div>
+		<div id="search" class="btn">搜索</div>
+		<div class="btn">导出</div>
+	</div>
+
+	<div class="order">
+		<div class="order_title">订单列表<em></em></div>
+		<div class="page">
+			<span id="btn_left"><</span>
+			<span id="page_left">1</span>
+			<span>/</span>
+			<span id="page_right">30</span>
+			<span id="btn_right">></span>
+		</div>
+	</div>
+	
+	<ul class="list_title">
+		<li class="num">订单编号</li>
+		<li class="company">所属分公司</li>
+		<li class="time">下单时间</li>
+		<li class="count">订单金额</li>
+		<li class="state">状态</li>
+		<li class="handle">操作</li>
+	</ul>
+
+	<ul class="list">
+		<li>
+			<span class="num">C201607111002</span><span class="company">江工银聚有限公司</span><span class="time">07-11 11:29:34</span><span class="count cor_dd">¥666.00</span><span class="state">待审核<em class="stateOK"></em></span><span class="handle"><span><em class="h_dd"></em>订单详情</span>
+				<span><em class="h_fz"></em>复制订单</span></span>
+		</li>
+		<li>
+			<span class="num">C201607111002</span><span class="company">江工银聚有限公司</span><span class="time">07-11 11:29:34</span><span class="count cor_dd">¥666.00</span><span class="state">已审核<em class="stateOK"></em></span><span class="handle"><span><em class="h_dd"></em>订单详情</span>
+				<span><em class="h_fz"></em>复制订单</span></span>
+		</li>
+		<li>
+			<span class="num">C201607111002</span><span class="company">江工银聚有限公司</span><span class="time">07-11 11:29:34</span><span class="count cor_dd">¥666.00</span><span class="state">待审核<em class="stateNO"></em></span><span class="handle"><span><em class="h_dd"></em>订单详情</span>
+				<span><em class="h_fz"></em>复制订单</span></span>
+		</li>
+		<li>
+			<span class="num">C201607111002</span><span class="company">江工银聚有限公司</span><span class="time">07-11 11:29:34</span><span class="count cor_dd">¥666.00</span><span class="state">待审核<em class="stateOK"></em></span><span class="handle"><span><em class="h_dd"></em>订单详情</span>
+				<span><em class="h_fz"></em>复制订单</span></span>
+		</li>
+		<li>
+			<span class="num">C201607111002</span><span class="company">江工银聚有限公司</span><span class="time">07-11 11:29:34</span><span class="count cor_dd">¥666.00</span><span class="state">待审核<em class="stateOK"></em></span><span class="handle"><span><em class="h_dd"></em>订单详情</span>
+				<span><em class="h_fz"></em>复制订单</span></span>
+		</li>
+		<li>
+			<span class="num">C201607111002</span><span class="company">江工银聚有限公司</span><span class="time">07-11 11:29:34</span><span class="count cor_dd">¥666.00</span><span class="state">待审核<em class="stateOK"></em></span><span class="handle">
+				<span><em class="h_dd"></em>订单详情</span>
+				<span><em class="h_fz"></em>复制订单</span>
+			</span>
+		</li>
+	</ul>
+	<div class="line"></div>
+</div>
+
+<!-- 页码 ↓-->
+<div class="pageNum">
+	<span id="page_prev"><em></em>上一页</span>
+	<ul id="page_num">
+		<li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li>
+	</ul>
+	<span id="page_next">下一页<em></em></span>
+</div>
+<!-- 页码 ↑-->
+
+<!-- toTop -->
+	<div class="fixed_btn">
+		<div class="cut">
+			<span class="cut_pic"></span>
+			<span>切换</span>
+			<span>经销商</span>
+		</div>
+		<div class="toTop">
+			<a href="#">
+				<span class="toTop_pic"></span>
+				<span>返回</span>
+				<span>顶部</span>
+			</a>
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="foot_main">
+			© 2015 浙江工银聚有限公司 版权所有 公司地址：中国 浙江省杭州市新市街153号　电话：0571-88888888
+		</div>
+	</div>
+</body>
+</html>

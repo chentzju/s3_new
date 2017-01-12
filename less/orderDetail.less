@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import "control_less/base.less";//css重写
+@import "control_less/public.less";//公共class
+@import "control_less/head.less";// 头部模板
+@import "control_less/toTop.less";// 
+
+.title{width:85%;height:40px;
+	line-height: 40px;
+	font-weight: bold;
+	margin:40px auto 15px auto;
+	color:@fontcol_blue;
+	font-size:16px;
+	em{display:inline-block;
+		border-style: solid;
+		border-width:7px;
+		border-color:@bg_Blue transparent transparent transparent;
+		position:relative;
+		top:5px;left:7px;
+	}
+}
+.main{width:83%;
+	.margin_auto;
+	.bg_col(#FBFBFB);
+	.border(1px,solid,#E5E5E5,0);
+	padding-top:1%;
+	padding-left:2%;
+	margin-bottom: 60px;
+	font-size: 14px;
+
+	p{font-size:14px;font-weight: bold;margin-bottom: 20px;clear:both;}
+	
+	.bor{clear:both;
+		.border(1px,solid,#E5E5E5,0);
+		width:97.5%;
+		background-color: #fff;
+	}
+	.borr{width: 97.5%;}
+
+	.check{margin-bottom: 30px;}
+	.check_list{
+		li{width:100%;height:40px;
+			span{display:inline-block;}
+		}
+		.check_name{width:90px;height:40px;
+			line-height: 40px;
+			text-align: left;
+		}
+	}
+	.dingdan_list{width:98%;overflow:hidden;
+		li{float:left;
+			height:60px;line-height: 60px;
+			text-align: center;
+		}	
+		.num{width:3%;}
+		.numTxt{width:10%;}
+		.name{width:12%;}
+		.standard{width:11%;}
+		.color{width:5%;}
+		.unit{width:5%;}
+		.bPrice{width:12%;}
+		.sPrice{width:12%;}
+		.count{width:7%;}
+		.date{width:10%;}
+		.subtotal{width:13%;}
+	}
+	.dingdan_bottom{width:97.5%;
+		overflow:hidden;
+		margin-top: 20px;
+		margin-bottom: 50px;
+		.total{float:left;font-weight: bold;margin-left:5px;}
+		.total_num{float:right;color:#FF4500;}
+	}
+	.huodong{margin-bottom: 50px;
+		.active_txt{height:35px;
+			.inptxt{display: inline-block;
+				padding-left:5px;
+				height:35px;width:480px;
+			}
+			span{display:inline-block;width:80px;height:35px;.border(1px,solid,#DEDEDE,0);line-height: 35px;text-align: center;.pointer;}
+			.edit{margin:0 10px 0 20px;}
+			.save{background-color:#6CB1DE;color:#fff;}
+		}
+	}
+}
+input::-webkit-input-placeholder {color: #000 !important;}

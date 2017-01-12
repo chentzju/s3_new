@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet/less" type="text/css" href="less/control_less/tc.less">
+	<script src="js/less.js" type="text/javascript"></script>
+</head>
+<body>
+	
+	<div class="tc_shadow"></div>
+
+	<div class="addAddress" style="display:none;">
+		<em class="tc_X"></em>
+		<p class="tc_title">添加收货地址</p>
+		<p class="tc_remind"><span class="col_01">新增收货地址&nbsp;&nbsp;</span>带<span class="col_01">✲</span>为必选项</p>
+
+		<form class="menu" action="post">
+			<ul>
+				<li>
+					<p class="menu_name">所在地区<span class="col_01">✲</span></p>
+					<select class="address_left">
+						<option value ="volvo">中国大陆</option>
+					</select>
+					<select class="address_right">
+						<option value ="volvo">中国大陆</option>
+					</select>
+				</li>
+				<li>
+					<p class="menu_name">详细地址<span class="col_01">✲</span></p>
+					<textarea placeholder="建议您如实填写详细收货地址" class="address"></textarea>
+				</li>
+				<li>
+					<p class="menu_name">邮政编码<span class="col_02">✲</span></p>
+					<input type="text" class="width270" placeholder="如您不清楚邮递区号，请填写000000">
+				</li>
+				<li>
+					<p class="menu_name">收货人姓名<span class="col_01">✲</span></p>
+					<input type="text" class="width270" placeholder="长度不超过25个字符">
+				</li>
+				<li>
+					<p class="menu_name">公司名称<span class="col_02">✲</span></p>
+					<input type="text" class="width270" placeholder="长度不超过100个字符">
+				</li>
+				<li>
+					<p class="menu_name">手机号码<span class="col_02">✲</span></p>
+					<input type="text" class="width270" placeholder="电话号码\手机号码必须填一个">
+				</li>
+				<li class="phone">
+					<p class="menu_name">电话号码<span class="col_02">✲</span></p>
+					<input type="text" class="phone_left" placeholder="区号">
+					<span>-</span>
+					<input type="text" class="phone_middle" placeholder="电话号码">
+					<span>-</span>
+					<input type="text" class="phone_right" placeholder="分机">
+				</li>
+			</ul>
+			<div id="default"><i></i><span>设置为默认收货地址</span></div>
+			<div id="menu_sava01" class="menu_btn">保存</div>
+		</form>
+	</div>
+
+	<div class="addAddress" style="display:;">
+		<em class="tc_X"></em>
+		<p class="tc_title">添加收货地址</p>
+		<p class="tc_remind"><span class="col_01">新增收货地址&nbsp;&nbsp;</span>带<span class="col_01">✲</span>为必选项</p>
+
+		<form class="menu" action="post">
+			<ul>
+				<li>
+					<p class="menu_name">登录名<span class="col_01">✲</span></p>
+					<input type="text" class="width270" placeholder="长度不超过25个字符">
+				</li>
+				<li>
+					<p class="menu_name">账户名称<span class="col_01">✲</span></p>
+					<input type="text" class="width270" placeholder="长度不超过100个字符">
+				</li>
+				<li>
+					<p class="menu_name">手机号码<span class="col_02">✲</span></p>
+					<input type="text" class="width270" placeholder="长度不超过100个字符">
+				</li>
+				<li>
+					<p class="menu_name">是否户用<span class="col_02">✲</span></p>
+					<div class="checked01"></div>
+				</li>
+				<li>
+					<p class="menu_name">角色选择<span class="col_02">✲</span></p>
+					<div class="checked02"><em></em>经销商采购</div>
+					<div class="checked02"><em></em>经销商财务</div>
+				</li>
+
+			</ul>
+			<div id="menu_sava02">保存</div>
+			<div id="menu_reset">重置</div>
+		</form>
+	</div>
+
+
+</body>
+</html>

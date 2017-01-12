@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+.main{
+	width:85%;min-height:670px;
+	position:relative;
+	.margin_auto;
+	overflow:hidden;
+
+	.main_left{float: left;
+		width:160px;min-height:660px;
+		background-color: #F4F9FC;
+		border-right:1px solid #E4E4E4;
+		.main_left_list{margin-top: 90px;
+			li{margin-top: 20px;
+				height:80px;
+				border-left:5px solid transparent;
+				.pointer;
+				box-sizing: border-box;
+				em{width:30px;height:30px;
+					position:relative;
+					left:50%;top:0;
+					margin:10px 0 10px -15px;
+				}
+				p{font-size: 14px;
+					color:#0E315D;
+					text-align: center;
+					font-weight: bold;
+				}
+				&:hover{background-color:#fff; 
+					border-left:5px solid #0B2F5C;
+					p{color:#0085D0;}
+				}
+			}
+			.zh{em{.bg_url(url(../images/myAccount_icon01.png));}
+				&:hover{
+					em{.bg_url(url(../images/myAccount_icon11.png));}
+				}
+			}
+			.xg{em{.bg_url(url(../images/myAccount_icon02.png));}
+				&:hover{
+					em{.bg_url(url(../images/myAccount_icon12.png));}
+				}
+			}
+			.dz{em{.bg_url(url(../images/myAccount_icon03.png));}
+				&:hover{
+					em{.bg_url(url(../images/myAccount_icon13.png));}
+				}
+			}
+			.zz{em{.bg_url(url(../images/myAccount_icon04.png));}
+				&:hover{
+					em{.bg_url(url(../images/myAccount_icon14.png));}
+				}
+			}
+		}
+	}
+
+	.main_right{float:left;
+		width:80%;height:100%;
+		.main_right_title{height:35px;width:100%;
+			line-height: 35px;
+			.bg_col(#F7F7F7);
+			border-bottom: 1px solid #E4E4E4;
+			color:@fontcol_lightBlue;
+			font-weight: bold;
+			padding-left: 35px;
+			em{position:relative;
+				left:7px;top:3px;
+				border-style: solid;
+				border-width: 6px;
+				border-color: #005787 transparent transparent transparent;
+			}
+		}
+	}
+}

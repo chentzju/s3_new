@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import "control_less/base.less";//css重写
+@import "control_less/public.less";//公共class
+@import "control_less/head.less";// 头部模板
+@import "control_less/toTop.less";// 
+
+.title{width:85%;height:40px;
+	line-height: 40px;
+	font-weight: bold;
+	margin:40px auto 15px auto;
+	color:@fontcol_blue;
+	font-size:16px;
+	em{display:inline-block;
+		border-style: solid;
+		border-width:7px;
+		border-color:@bg_Blue transparent transparent transparent;
+		position:relative;
+		top:5px;left:7px;
+	}
+}
+.main{width:83%;
+	.margin_auto;
+	.bg_col(#FBFBFB);
+	.border(1px,solid,#E5E5E5,0);
+	position:relative;
+	padding-top:1%;
+	padding-left:2%;
+	margin-bottom: 60px;
+	font-size: 14px;
+
+	p{font-size:14px;font-weight: bold;margin-bottom: 20px;clear:both;}
+	
+	.check{margin-bottom: 30px;}
+	.check_list{
+		li{width:100%;height:40px;
+			span{display:inline-block;}
+		}
+		.check_name{width:90px;height:40px;
+			line-height: 40px;
+			text-align: left;
+		}
+	}
+	.guanlian{width:97%;
+		
+		.border(1px,solid,#E3E3E3,0);
+		li{height:58px;width:100%;
+			div{float:left;height:58px;line-height: 58px;
+				.guan_name{color:#383838;font-weight: bold;margin-right:5px;}
+				.guan_state{color:#025888;font-weight: bold;
+					em{display:inline-block;
+						width:14px;height:14px;
+						.bg_url(url(../images/icon_delete.png));
+						position:relative;
+						top:3px;left:10px;
+					}
+				}
+			}
+		}
+		.guan01{width:25%;margin-left:3%;}
+		.guan02{width:25%;}
+		.guan03{width:30%;}
+		.guan04{width:17%;}
+	}
+
+	.huodong{margin-bottom: 50px;
+		.active_txt{height:35px;
+			.inptxt{display: inline-block;
+				padding-left:5px;
+				height:35px;width:480px;
+			}
+			span{display:inline-block;width:80px;height:35px;.border(1px,solid,#DEDEDE,0);line-height: 35px;text-align: center;.pointer;}
+			.edit{margin:0 10px 0 20px;}
+			.save{background-color:#6CB1DE;color:#fff;}
+		}
+	}
+	.pay_money{display:inline-block;font-weight: bold;
+		position:absolute;
+		right:3%;bottom:50px;
+		.pay_money01{margin-right:5px;}
+		.pay_money02{color:#FF4B00;font-size: 18px;}
+	}
+}
+input::-webkit-input-placeholder {color: #000 !important;}
